@@ -4,36 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href=".css/main.css" rel="stylesheet" type="text/css">
-  <title>Document</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Let's learning</title>
 </head>
 <body>
-  <ul class="nav justify-content-center"style="background-color: rgb(216, 199, 243);>
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">HOMEß</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Topic</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Blog</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-  </ul>
-  <div class="main">
-    <div class="main-title">
-      <h1>Welcome to Amy's Page</h1>
-      <p style="color: rgb(233, 212, 227);">Hi I am a SUPER-pre Web developer.<br>I enjoys learning Web develop in Dev-academy<br><strong><b>Have a good time looking my homepage</b><strong</p>
-    </div>
-    <div class="main-img">
-      <img src="/citizen-developer-scaled.webp">
-    </div>
-  </div>
-  
+  <div class="main-2">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">KNOWLEDGE</h2>
+            </div>
 
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./html-css.html">KNOWLEDGE</a></li>
+                    <li><a href="./te-houtaewa-template.html">STORY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+          <h1>What is Position in CSS?</h1>
+            <p>The position CSS property sets how an element is positioned in a document. <br>
+              The top, right, bottom, and left properties determine the final location of positioned elements.</p>
+              <p> There are 4ways to determine the position of an element in CSS.</p>
+          <h1>what is the position of an element in CSS?</h1>
+            <h3>1. Static</h3>
+            <p>By default, <strong>position an element based on its current position in the flow.</strong> 
+              <br>The top, right, bottom, left and z-index properties do not apply.</p>
+            <h3>2. Relative</h3>
+             <p>Position an element based on its current position <strong>without changing layout.</strong></p>
+        
+            <h3>3. absolte</h3>
+             <p>Position an element based on its <strong>closest positioned ancestor position</strong></p>
+          <h2>Take an example</h2>
+          <p>To start with, create a parent container with 4 boxes side by side</p>
+          <div id="capture-image">
+            <img src="../images/static.png" >
+          </div>
+          <h3>index.html</h3>
+          <div > 
+            <img id="capture-image" src="../images/index-html.png">
+          </div>
+          <h3>style.css</h3>
+          <div >
+            <img id="capture-image" src="../images/css-static.png">
+          </div>
+          <p>By default, position is set to static.It positions based on the layout in the flow.
+          </p>
+          <p>This is where position relative comes in. Move the green box relative to its current position<br>
+             to 20px from the left and top without changing the layout around it. 
+            <br>Thus, leaving a gap for the green box where it would have been had it not been position.</p>
+          <div >
+            <img  id="capture-image" src="../images/css-relactive.png" alt="#">
+          </div>
+          <p>By applying position: absolute to the GreenBox, it will not leave any gap where it would have been. 
+            <br>The position of the GreenBox is based on its parent position (the dotted border). 
+            <br>Thus, moving 20px to the left and bottom from the top-left origin of the dotted border.
+          </p>
+          <div >
+            <img id="capture-image" src="../images/css-absolute.png">
+          </div>
+          <div id="capture-image" style="margin-top: 50px;">
+            <img src="../images/css-results.png">
+          </div>
+
+              <button class="cn"><a href="./te-houtaewa-template.html">Go to next</a></button>
+      </div>
   
 </body>
 </html>
