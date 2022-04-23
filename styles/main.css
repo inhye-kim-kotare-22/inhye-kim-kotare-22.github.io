@@ -5,7 +5,7 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5)50%),url(../images/1.jpg);
+    background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5) 50%),url(../images/1.jpg);
     background-position: center;
     background-size: cover;
     height: 109vh;
@@ -141,7 +141,7 @@ ul li a:hover{
 .form{
     width: 250px;
     height: 380px;
-    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50% );
+    background: linear-gradient(to top,rgba(0,0,0,0.8) 50%,rgba(0,0,0,0.8) 50% );
     position: absolute;
     top: -20px;
     left: 870px;
@@ -233,7 +233,7 @@ ul li a:hover{
 }
 .main-2{
   width: 100%;
-  background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5)50%);
+  background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5) 50%);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -272,7 +272,7 @@ p{
 }
 .main-3{
   width: 100%;
-  background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5)50%);
+  background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5) 50%);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -300,4 +300,28 @@ p{
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+.main-4{
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5) 50%);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  box-sizing: content-box;
+}
+.identity-content{
+  background-color: rgb(24, 40, 34);
+  color: antiquewhite;
+  margin: 100px;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-right: 50px;
+  box-sizing: content-box;
+}
+.main-5{
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0.5),rgba(0,0,0,0.5) 50%);
+  background-position: center;
+  background-size: cover;
+  box-sizing: content-box;
 }
