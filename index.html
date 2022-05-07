@@ -13,27 +13,84 @@
 <body>
   <div class="container">
     <header>
+      <button class="navIcon" id="hamNavIcon">
+        <i class="fa fa-bars"></i>
+      </button>
       <h2 class="logo">Amy's</h2>
-      <ul class="navbar">
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./blog/html-css.html">KNOWLEDGE</a></li>
-        <li><a href="./blog/te-houtaewa-template.html">STORY</a></li>
-        <li><a href="./blog/identity-values.html">ABOUT ME</a></li>
-        <li><a href="./blog/learning-plan.html">PLANNING</a></li>
-        <li><a href="./blog/javascript-dom.html">JAVASCRIPT</a></li>
-        <li><a href="./blog/emotional-intelligence.html">EQ vs IQ</a></li>
-    </ul>
+      <div class="navMedia hide" >
+        <nav class="nav-element">
+          <ul>
+            <li class="button-dropdown"><a href="/index.html">Home</a></li>
+            <li class="button-dropdown"><a href="./blog/identity-values.html">About</a></li>
+            <li class="button-dropdown"><a href="#">
+              <button id="techBtn" class="navbtn" onclick="dropdownTech();">Tech
+              <i class="fa-solid fa-angle-down"></i></button>
+              <div id="techDropdown" class="dropdown-content">
+                <a href="./blog/html-css.html">HTML & CSS</a>
+                <a href="./blog/javascript-dom.html">JAVACSRIPT</a>
+                <a href="./blog/problem-solving.html">Problem Soving</a>
+              </div>
+            </a></li>
+            <li class="button-dropdown"><a href="#">
+              <button id="coreBtn" class="navbtn" onclick="dropdownCore();">Core
+              <i class="fa-solid fa-angle-down"></i></button>
+              <div id="coreDropdown" class="dropdown-content">
+                <a href="./blog/te-houtaewa-template.html">Story</a>
+                <a href="./blog/learning-plan.html">Plan</a>
+                <a href="./blog/emotional-intelligence.html">EQ</a>
+                <a href="./blog/mindst.html">Mindset</a>
+              </div>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+
     </header>
       <div class="content">
-            <h1>Amy's <span>Story</span></h1>
-            <p class="par">She is Korea and she is living in Wellington in prsent.
-              <br>She use to work as a short-hands typist for 4years in court.<br>
-              And She is working as Chef in New Zealand. She enjoys Challenging a person.
-              <br> One more she wants to change her career as Software-developer.<br>
-              She belives in herself; she can do whatever she wants.<br>
-              Cheer her up!!</p>
+            <h1>Welcome to<span> Amy's Blog</span></h1>
+            <br>
+            <p class="par">
+              Hi I am Korean and am living in Wellington.<br> 
+              In this blog, I am going to document my journey into Dev-academy.<br>
+              This is my first challenging to be super Web-developer.<br>
+              I'm excited to share my first blog with you. 
       </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/86ab4ed27c.js" crossorigin="anonymous"></script>
+    <script>
+
+      document.getElementById("techBtn").onclick = function() {
+        dropdownTech()
+      };   
+      function dropdownTech(){
+        document.getElementById("techDropdown").classList.toggle("visible");
+      }
+
+      document.getElementById("coreBtn").onclick = function() {
+        dropdownCore()
+      };
+
+      function dropdownCore(){
+        document.getElementById("coreDropdown").classList.toggle("visible");
+      }
+
+      const menu = document.querySelector(".navMedia");
+      const hamburger= document.querySelector(".navIcon");
+
+      function toggleMenu() {
+        if (menu.classList.contains("hide")) {
+          menu.classList.remove("hide");
+        } else {
+          menu.classList.add("hide");
+        }
+      }
+
+      hamburger.addEventListener("click", toggleMenu);
+
+
+
+    </script>
+   
 </body>
 </html>
