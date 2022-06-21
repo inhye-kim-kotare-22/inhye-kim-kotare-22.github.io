@@ -462,3 +462,27 @@ li{
     width: 100%;
   }
 }
+@media screen and (max-width : 320px) {
+  p {
+    margin-left: 0;
+    font-family: monospace;
+  }
+  h1{
+    padding-top: 50px;
+    margin-left: 0;
+  
+  }
+  main{
+    padding-top: 100px;
+    
+  }
+  .content .par{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 0;
+  } 
+  img{
+    width: 100%;
+  }
+  
+}
